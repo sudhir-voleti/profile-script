@@ -1,0 +1,79 @@
+##########################################################
+##########################################################
+
+# Run next 8 lines code for only one time. Shpould run in 10 min. Seletect Yes wherever it asks to create library or update library or restart R session
+source("https://raw.githubusercontent.com/sudhir-voleti/factor-analysis-shinyapp/master/dependency-factor-analysis-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/jsm-shinyapp/master/dependency-jsm-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/segmentation-discriminant-and-targeting-shinyapp/master/dependency-segmentation-discriminant-and-targeting-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/ols-shinyapp/master/dependency-ols-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/likert-visualization-shinyapp/master/dependency-likert-visualization-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/basic-text-analysis-shinyapp/master/dependency-basic-text-analysis-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/text-topic-analysis-shinyapp/master/dependency-text-topic-analysis-shinyapp.R")
+source("https://raw.githubusercontent.com/sudhir-voleti/biplot-shinyapp/master/dependency-biplot-shinyapp.R")
+
+##########################################################
+##########################################################
+
+# factor App  
+source("https://raw.githubusercontent.com/sudhir-voleti/factor-analysis-shinyapp/master/dependency-factor-analysis-shinyapp.R")
+runGitHub("factor-analysis-shinyapp","sudhir-voleti")
+
+# JSM App 
+source("https://raw.githubusercontent.com/sudhir-voleti/jsm-shinyapp/master/dependency-jsm-shinyapp.R")
+runGitHub("jsm-shinyapp","sudhir-voleti")
+
+# Segmentation-discriminant-targeting App
+source("https://raw.githubusercontent.com/sudhir-voleti/segmentation-discriminant-and-targeting-shinyapp/master/dependency-segmentation-discriminant-and-targeting-shinyapp.R")
+runGitHub("segmentation-discriminant-and-targeting-shinyapp","sudhir-voleti")
+
+# OLS App
+source("https://raw.githubusercontent.com/sudhir-voleti/ols-shinyapp/master/dependency-ols-shinyapp.R")
+runGitHub("ols-shinyapp","sudhir-voleti")
+
+# Likart Visualization App
+source("https://raw.githubusercontent.com/sudhir-voleti/likert-visualization-shinyapp/master/dependency-likert-visualization-shinyapp.R")
+runGitHub("likert-visualization-shinyapp","sudhir-voleti")
+
+# Basic Text Analysis App
+source("https://raw.githubusercontent.com/sudhir-voleti/basic-text-analysis-shinyapp/master/dependency-basic-text-analysis-shinyapp.R")
+runGitHub("basic-text-analysis-shinyapp", "sudhir-voleti")
+
+# Topic Mining App
+source("https://raw.githubusercontent.com/sudhir-voleti/text-topic-analysis-shinyapp/master/dependency-text-topic-analysis-shinyapp.R")
+runGitHub("text-topic-analysis-shinyapp", "sudhir-voleti")
+
+# Bi Plot App
+source("https://raw.githubusercontent.com/sudhir-voleti/biplot-shinyapp/master/dependency-biplot-shinyapp.R")
+runGitHub("biplot-shinyapp","sudhir-voleti")
+
+# basic network analysis app
+require (shiny) || install.packages("shiny"); library("shiny")
+runGitHub('network-analysis-shinyapp','aashishkpandey')
+
+# text networks app
+require(igraph) || {install.packages("igraph"); library(igraph)}
+require(tm) || {install.packages("tm"); library(tm)}
+library(shiny)
+runGitHub('text-network-app','sudhir-voleti')
+
+install.packages("RColorBrewer")
+install.packages("qdap")
+
+# 
+# # download all data sets in sample-data-sets repository
+# download.file("https://codeload.github.com/sudhir-voleti/sample-data-sets/zip/master",
+#               'C:\\Users\\30773\\Desktop\\sample_data_All.zip', mode = 'wb')
+# 
+# # download a file from the raw file url
+# download.file("https://raw.githubusercontent.com/sudhir-voleti/sample-data-sets/master/JSM%20example%20data/officestar%20perceptual.txt",
+#               'C:\\Users\\30773\\Desktop\\office star perceptual.txt', mode = 'wb')
+# 
+# # download a file from the raw file url
+# download.file("https://raw.githubusercontent.com/sudhir-voleti/sample-data-sets/master/JSM%20example%20data/officestar%20preference.txt",
+#               'C:\\Users\\30773\\Desktop\\office star preference.txt', mode = 'wb')
+# 
+
+library(shiny)
+# Basic Text Analysis App
+source("https://raw.githubusercontent.com/sudhir-voleti/basic-text-app/master/dependency-basic-text-analysis-shinyapp.R") # dep...R ._ Raw -> copy url
+runGitHub("basic-text-app", "sudhir-voleti")
